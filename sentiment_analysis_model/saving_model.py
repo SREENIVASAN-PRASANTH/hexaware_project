@@ -51,9 +51,6 @@ model.fit(X_train_split, y_train_split)
 # print("Test Classification Report:")
 # print(classification_report(y_test, y_test_pred))
 
-sentence = "Hi how are you"
-op = model.predict([sentence,"today class was fantastic"])
-print(op)
 
-# joblib.dump(model, "sentiment_model.pkl")
+joblib.dump(model, "sentiment_model.pkl")
 
