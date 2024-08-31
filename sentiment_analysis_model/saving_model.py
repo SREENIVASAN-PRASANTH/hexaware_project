@@ -2,9 +2,9 @@ import pandas as pd
 import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.naive_bayes import MultinomialNB
+# from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import make_pipeline
-from sklearn.metrics import classification_report, accuracy_score
+# from sklearn.metrics import classification_report, accuracy_score
 from sklearn.linear_model import LogisticRegression
 
 # Load the CSV files
