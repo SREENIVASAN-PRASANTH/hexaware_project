@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Candidate Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="edit-candidate-container">
+        <h1>Edit Candidate Details</h1>
+
+        <!-- Edit Personal Information -->
+        <section>
+            <h2>Personal Information</h2>
+            <form id="edit-candidate-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="John Doe">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="johndoe@example.com">
+
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" value="B.Tech Computer Science">
+
+                <label for="specialization">Specialization:</label>
+                <input type="text" id="specialization" name="specialization" value="Data Science">
+
+                <label for="batch">Batch:</label>
+                <select id="batch" name="batch">
+                    <option value="java">Java Batch</option>
+                    <option value="python" selected>Python Batch</option>
+                    <option value="data-engineering">Data Engineering Batch</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- Edit Training Progress -->
+        <section>
+            <h2>Training Progress</h2>
+            <form id="progress-form">
+                <label for="completion">Course Completion (%):</label>
+                <input type="number" id="completion" name="completion" value="85">
+
+                <label for="mcq">MCQ Score:</label>
+                <input type="number" id="mcq" name="mcq" value="80">
+
+                <label for="project">Project Evaluation Score (%):</label>
+                <input type="number" id="project" name="project" value="90">
+            </form>
+        </section>
+
+        <!-- Uploaded Certificates -->
+        <section>
+            <h2>Uploaded Certificates</h2>
+            <ul id="certificate-list">
+                <li>AWS Certification <button class="remove-cert">Remove</button></li>
+                <li>Python for Data Science Certificate <button class="remove-cert">Remove</button></li>
+                <!-- Add more certificates dynamically -->
+            </ul>
+            <label for="new-certificate">Upload New Certificate:</label>
+            <input type="file" id="new-certificate" name="new-certificate">
+        </section>
+
+        <!-- Save Changes Button -->
+        <button id="save-candidate-btn">Save Changes</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

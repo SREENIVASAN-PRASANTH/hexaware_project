@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h1>Feedback Form</h1>
+
+        <!-- Feedback Form -->
+        <form id="feedback-form">
+            <label for="topic">Select Topic:</label>
+            <select id="topic" name="topic">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="data-engineering">Data Engineering</option>
+                <!-- Add more topics as required -->
+            </select>
+
+            <label for="rating">Rate the Training (1 to 5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Your feedback..." required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <div id="feedback-message"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

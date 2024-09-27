@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-dashboard-container">
+        <h1>Admin Dashboard</h1>
+
+        <!-- Batch Overview -->
+        <section>
+            <h2>Batch Overview</h2>
+            <table>
+                <tr>
+                    <th>Batch</th>
+                    <th>Total Candidates</th>
+                    <th>Progress</th>
+                </tr>
+                <tr>
+                    <td>Java Batch</td>
+                    <td>28</td>
+                    <td>85%</td>
+                </tr>
+                <tr>
+                    <td>Python Batch</td>
+                    <td>30</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>Data Engineering Batch</td>
+                    <td>27</td>
+                    <td>75%</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Candidate Management -->
+        <section>
+            <h2>Candidate Management</h2>
+            <table>
+                <tr>
+                    <th>Candidate Name</th>
+                    <th>Batch</th>
+                    <th>Progress</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Java Batch</td>
+                    <td>90%</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Python Batch</td>
+                    <td>85%</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <!-- Add more candidates as needed -->
+            </table>
+        </section>
+
+        <!-- Report Generation Section -->
+        <section>
+            <h2>Generate Reports</h2>
+            <form id="report-form">
+                <label for="batch">Select Batch:</label>
+                <select id="batch" name="batch">
+                    <option value="java">Java Batch</option>
+                    <option value="python">Python Batch</option>
+                    <option value="data-engineering">Data Engineering Batch</option>
+                </select>
+
+                <button type="submit">Generate Report</button>
+            </form>
+            <div id="report-message"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

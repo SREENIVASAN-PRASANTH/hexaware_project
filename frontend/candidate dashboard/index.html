@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome, <span id="candidate-name">[Candidate Name]</span></h1>
+
+        <!-- Personal Info Section -->
+        <section>
+            <h2>Your Information</h2>
+            <table>
+                <tr>
+                    <td><strong>Name:</strong></td>
+                    <td id="candidate-name-display"></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td id="candidate-email"></td>
+                </tr>
+                <tr>
+                    <td><strong>Degree:</strong></td>
+                    <td id="candidate-degree"></td>
+                </tr>
+                <tr>
+                    <td><strong>Batch:</strong></td>
+                    <td id="candidate-batch"></td>
+                </tr>
+                <tr>
+                    <td><strong>LinkedIn:</strong></td>
+                    <td id="candidate-linkedin"></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Progress Section -->
+        <section>
+            <h2>Your Progress</h2>
+            <div class="progress-container">
+                <label for="progress">Training Completion:</label>
+                <progress id="progress" value="0" max="100"></progress>
+                <span id="progress-value">0%</span>
+            </div>
+        </section>
+
+        <!-- Certificate Upload Section -->
+        <section>
+            <h2>Upload Your Certificates</h2>
+            <form id="upload-form">
+                <label for="certificate">Choose certificate to upload:</label>
+                <input type="file" id="certificate" name="certificate">
+                <button type="submit">Upload</button>
+            </form>
+            <div id="upload-message"></div>
+        </section>
+
+        <!-- AI Recommendations -->
+        <section>
+            <h2>AI Recommendations</h2>
+            <p id="ai-recommendations">You haven't received any recommendations yet.</p>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

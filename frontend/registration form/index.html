@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Navigator - Candidate Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Candidate Registration Form</h1>
+        <form id="candidate-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+
+            <label for="specialization">Specialization:</label>
+            <input type="text" id="specialization" name="specialization">
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number">
+
+            <label for="certifications">Certifications:</label>
+            <textarea id="certifications" name="certifications"></textarea>
+
+            <label for="internships">Internship Details:</label>
+            <textarea id="internships" name="internships"></textarea>
+
+            <label for="courses">Courses Completed:</label>
+            <textarea id="courses" name="courses"></textarea>
+
+            <label for="linkedin">LinkedIn Profile:</label>
+            <input type="url" id="linkedin" name="linkedin_profile">
+
+            <label for="github">GitHub Profile:</label>
+            <input type="url" id="github" name="github_profile">
+
+            <label for="programming_languages">Programming Languages Known:</label>
+            <textarea id="programming_languages" name="programming_languages"></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

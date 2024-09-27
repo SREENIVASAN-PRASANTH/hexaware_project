@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="batch-comparison-container">
+        <h1>Batch Comparison</h1>
+
+        <!-- Comparison Table -->
+        <section class="comparison-section">
+            <h2>Performance Comparison of Batches</h2>
+            <table id="batch-comparison-table">
+                <thead>
+                    <tr>
+                        <th>Batch Name</th>
+                        <th>Average MCQ Score (%)</th>
+                        <th>Average Project Score (%)</th>
+                        <th>Completion Percentage (%)</th>
+                        <th>AI Recommendations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java Batch</td>
+                        <td>85</td>
+                        <td>90</td>
+                        <td>80</td>
+                        <td>Focus on improving MCQ performance in modules 2 and 3.</td>
+                    </tr>
+                    <tr>
+                        <td>.NET Batch</td>
+                        <td>88</td>
+                        <td>85</td>
+                        <td>75</td>
+                        <td>Improve project evaluations in advanced topics.</td>
+                    </tr>
+                    <tr>
+                        <td>Data Engineering Batch</td>
+                        <td>90</td>
+                        <td>92</td>
+                        <td>88</td>
+                        <td>Focus on practical exercises for batch improvement.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Visualization of Batch Performance -->
+        <section class="visualization-section">
+            <h2>Batch Performance Visualization</h2>
+            <canvas id="batch-comparison-chart" width="400" height="200"></canvas>
+        </section>
+
+        <!-- Export Report Button -->
+        <section class="export-section">
+            <button id="export-report-btn">Export Comparison Report (PDF)</button>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
